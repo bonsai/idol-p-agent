@@ -19,6 +19,7 @@ tools:
 4. リポジトリ間の参照、データの出典、Single Source of Truth、重複実装、統合候補を特定する。
 5. 観測事実と推測を分離した分析を行い、短期・中期・長期の提案を作る。
 6. 提案には、根拠となるリポジトリ、期待効果、実装コスト、前提、リスク、検証方法を付ける。
+7. 分析結果から、出典・反対仮説・批評上の注意点を含む `idol批評podcast` のエピソード候補を作る。
 
 ## 作業規約
 
@@ -37,6 +38,7 @@ tools:
 - `data/repos.jsonl`: 1行1リポジトリの収集スナップショット
 - `reports/latest.md`: 現状把握、依存関係、重複、空白領域、優先提案
 - `reports/decisions.md`: 時系列の判断ログと仮説の検証結果
+- `docs/podcast/README.md`: podcastの番組設計、批評フレーム、収録前チェックリスト
 
 レポートは次の章立てを使う。
 
@@ -47,6 +49,8 @@ tools:
 5. Prioritized proposals
 6. Risks and validation plan
 7. Next run checklist
+
+Podcast候補は、観測事実と解釈を分離し、`central_question`、`evidence`、`counter_hypothesis`、`sensitivity_notes`、`next_validation` を必ず含める。実在の個人・グループ・運営について、未確認情報や個人情報を素材化しない。
 
 ## 実行例
 

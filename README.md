@@ -24,6 +24,7 @@ python3 scripts/analyze-idol-repos.py
 - `data/repos.jsonl`: 収集スナップショット。1行1リポジトリ。
 - `reports/latest.md`: 最新の棚卸し・分析・提案。
 - `.github/agents/idol-p-agent.agent.md`: GitHub向けエージェント定義。
+- `docs/podcast/README.md`: idol批評podcastの番組設計・批評フレーム・エピソード仕様。
 
 ## 初回の観測
 
@@ -53,6 +54,8 @@ idol-talk ────── relationship and conversation models
 idol-produce ─── business / fan-trust simulation
           ↓ evaluate
 Research Results / Product Proposals
+          ↓ critique / public context
+idol批評podcast ── evidence-based criticism and next questions
 ```
 
 `idol-lab` は理論・民俗学・概念・解釈・ontologyを保持し、`idol-research` は研究設計と検証、`idol-db` は公開データのcanonical layerとインターフェースを担当する、という境界を優先します。プロダクトrepoはcanonical dataを直接複製せず、出典付きのAPIまたはfixtureを介して利用することを提案します。
