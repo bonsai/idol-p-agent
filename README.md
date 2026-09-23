@@ -1,6 +1,8 @@
 # idol-p-agent
 
-`bonsai` 配下の `idol` / `idol-*` リポジトリを横断して把握し、既存データと実装を根拠に、次の研究・開発・統合候補を提案するプロジェクト・インテリジェンス用エージェントです。
+`producer-agent` architypeをアイドル領域へ適用した**実務型 producer agent**です。`bonsai` 配下の `idol` / `idol-*` リポジトリを横断して把握し、既存データと実装を根拠に、次の研究・開発・統合候補を企画・計画・Workflow Taskへ変換します。
+
+原型は [`bonsai/producer-agent`](https://github.com/bonsai/producer-agent)、この実務型が企画・計画するプロジェクトは [`bonsai/idol-podcast`](https://github.com/bonsai/idol-podcast) です。
 
 ## 役割
 
@@ -9,6 +11,10 @@
 - 理論・データ・イベント・会話・発見・プロデュースの層を整理
 - データの出典、依存関係、重複、未充足領域を分析
 - 短期・中期・長期の提案を、根拠・コスト・リスク・検証方法付きで提示
+
+## 実務型としての仕事
+
+このagentは、リポジトリ棚卸しとマーケティング／研究結果を入力に、企画を選び、スコープ・非目標・成果指標・依存関係・リスクを決め、実行可能な計画へ落とします。最後に各作業を **skill・tool・owner・input・output・done condition** 付きのWorkflow Taskとして出力します。`idol-podcast` の場合は、批評Podcastを企画し、`idol-db`・`idol-research`・`podcast-generator`をつなぐ計画を作る役割です。
 
 ## 実行
 
